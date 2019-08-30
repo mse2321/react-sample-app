@@ -1,0 +1,59 @@
+@import "./partials/_header.scss";
+@import "./partials/_form.scss";
+@import "./partials/_apiContent.scss";
+@import "./partials/_footer.scss";
+@import "./partials/_accounts.scss";
+@import "./partials/_modal.scss";
+@import "./partials/_nav.scss";
+@import "./partials/_login.scss";
+@import "./partials/_search.scss";
+@import "./partials/_buttondisplay.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Commonly Used variables
+//$defaultPadding: 1rem;
+
+body.sample {
+  font-family: $font-family-sans-serif;
+  margin: 0;
+}
+
+.sample section {
+  padding: 1rem;
+}
+
+.backgroundDisabled {
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.container {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+}
+.grid-column {
+  grid-column-start:1;
+  grid-column-end:2;
+}
+.grid-column2 {
+  grid-column-start:2;
+  grid-column-end:3;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}

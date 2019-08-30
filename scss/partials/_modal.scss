@@ -1,0 +1,29 @@
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+div.modal {
+  background-color: #eee;
+  color: #666;
+  padding: 1rem;
+  border: 0.3em solid #ddd;
+  position: fixed;
+  border-radius: 1em;
+  top: 40%;
+  left: 30%;
+  right: 40%;
+  bottom: 40%;
+  width: 35%;
+  height: 35%;
+  z-index: 500;
+  transition: transform 1s;
+  & div.modal_button_container {
+    text-align: right;
+  }
+  & button.modalCloseButton {
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #666;
+    background-color: #ddd;
+    border-radius: 0.2em;
+    padding: 0.1rem 0.5rem;
+  }
+}

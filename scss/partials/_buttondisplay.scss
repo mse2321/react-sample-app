@@ -1,0 +1,25 @@
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+$buttonDisplayBorder: 0.1rem solid $gray-600;
+
+.buttonDisplay {
+  background-color: $gray-400;
+  padding: 1rem;
+  margin: 1rem auto;
+
+  & button {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  & div.articleDisplay {
+    border-right: $buttonDisplayBorder;
+
+    @include media-breakpoint-down(sm) {
+      border-right: none;
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+      border-bottom: $buttonDisplayBorder;
+    }
+  }
+}

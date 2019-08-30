@@ -1,0 +1,37 @@
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+.login {
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #ddd;
+  width: 25%;
+
+  @include media-breakpoint-down(xs) {
+    width: 90%;
+  }
+  @include media-breakpoint-between(sm,sm) {
+    width: 70%;
+  }
+  @include media-breakpoint-between(md,md) {
+    width: 50%;
+  }
+  @include media-breakpoint-between(md,lg) {
+    width: 40%;
+  }
+
+  & input {
+    color: #666;
+    display: block;
+    margin: 1rem auto;
+    width: 80%;
+    padding: 0.4rem;
+    font-size: 1em;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  & button[type="submit"] {
+    width: 40%;
+  }
+}

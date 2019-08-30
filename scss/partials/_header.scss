@@ -1,0 +1,20 @@
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+.sample header {
+  background-color: #0d47a1;
+  color: white;
+  padding: 2rem;
+  & h1 {
+    color: #eee;
+    letter-spacing: 0.01em;
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+  }
+  & button {
+    margin-right: 1em;
+    color: $gray-600;
+  }
+}

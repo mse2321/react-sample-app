@@ -1,0 +1,33 @@
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+@mixin table_cell_border {
+  border-bottom: 0.1em solid #ccc;
+  border-right: 0.1em solid #ccc;
+  border-left: 0.1em solid #ccc;
+}
+
+.apiContent {
+  & table {
+    border-collapse: collapse;
+
+    & tr.HeadingRow th {
+      background-color: $gray-600;
+      color: white;
+      padding: 1rem;
+      border-right: 0.1em solid #00acc1;
+      border-left: 0.1em solid #00acc1;
+      text-align: left;
+      letter-spacing: 0.1em;
+    }
+
+    & tr:nth-child(odd) {
+      background-color: #eee;
+    }
+
+    & td {
+        padding: 1rem;
+        @include table_cell_border;
+    }
+
+  }
+}

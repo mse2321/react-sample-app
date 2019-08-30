@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: apiContent should match the apiContent component 1`] = `
+<section
+  className="apiContent"
+>
+  <ul>
+    <h2>
+      Here is a list of random countries:
+    </h2>
+     
+  </ul>
+</section>
+`;

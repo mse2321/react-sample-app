@@ -1,0 +1,55 @@
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+.sample form {
+  color: black;
+  padding: 2rem 1rem;
+
+  & button[type="submit"] {
+    background: linear-gradient(to bottom, #80deea, #00acc1);
+    border-radius: 4px 4px 4px 4px;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: 0;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  & textarea {
+    margin-left: 1rem;
+    vertical-align: bottom;
+    width: 80.1%;
+  }
+}
+
+.sampleForm {
+  background-color: $gray-400;
+  width: 70%;
+
+  & input, button, label {
+    margin-left: 1em;
+    border: 0;
+  }
+  & input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .sample form {
+    & input, button, label, textarea {
+      display: block;
+      text-align: center;
+      width: 70%;
+    }
+    & input, button, textarea {
+      margin: 0 auto 1rem auto;
+    }
+    & input, textarea {
+      padding: 0.5rem;
+    }
+    & label {
+      margin: 0 auto 0.5rem auto;
+    }
+  }
+
+}

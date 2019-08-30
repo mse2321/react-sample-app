@@ -1,0 +1,65 @@
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+.searchForm {
+  & input, label {
+    margin-left: 1em;
+  }
+  & .form-group, input, button[type="submit"] {
+    display: inline-block;
+  }
+  & .form-group {
+    width: 80%;
+  }
+  & input {
+    width: 90%;
+  }
+}
+
+.searchResults {
+  border-top: 1px solid $gray-400;
+  padding: 1rem;
+  margin-bottom: 4rem;
+
+  & ul {
+    padding-left: 0;
+  }
+  & ul > li {
+    list-style-type: none;
+    border-bottom: 1px solid $gray-300;
+    padding: 1em;
+  }
+  & ul > li:hover {
+    background-color: $gray-200;
+  }
+  & a, a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  img {
+    margin-right: 2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .sample form {
+    & input, button, label, textarea {
+      display: block;
+      text-align: center;
+      width: 95%;
+    }
+    & input, button, textarea {
+      margin: 0 auto 1rem auto;
+    }
+    & input, textarea {
+      padding: 0.5rem;
+    }
+    & label {
+      margin: 0 auto 0.5rem auto;
+    }
+  }
+  .searchForm .form-group {
+      width: 95%;
+  }
+
+}

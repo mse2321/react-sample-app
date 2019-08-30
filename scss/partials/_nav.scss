@@ -1,0 +1,25 @@
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+.sample nav.mainNav {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+  & li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 2rem;
+    & a {
+      text-decoration: none;
+      color: #fff;
+    }
+    & a:hover {
+      color: #00acc1;
+    }
+  }
+}
